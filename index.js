@@ -16,7 +16,10 @@ app.set("views", path.join(__dirname, 'views'));
 app.set("view engine", "hbs");
 
 app.get("/", (req, res) => {
-    res.render('index');
+    var name = "Cloud Computing";
+    var code = 1644;
+    var semeter = "Fall 2022";
+    res.render('index', {name : name, code : code, semeter : semeter});
 })
 
 app.get("/mobile", (req, res) => {
