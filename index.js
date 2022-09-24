@@ -28,4 +28,4 @@ app.get("/laptop", (req, res) => {
   });
 
 //listen port để chạy server
-app._router(port);
+app.listen(port);
