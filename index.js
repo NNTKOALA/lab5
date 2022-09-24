@@ -8,7 +8,7 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 
 //set thư mục chứa view
-app.set("view", path.join(__dirname, 'views'));
+app.set("views", path.join(__dirname, 'views'));
 
 //set view engine (template engine)
 //=> giúp gõ code của back-end ngay trogn front-end dễ hơn
